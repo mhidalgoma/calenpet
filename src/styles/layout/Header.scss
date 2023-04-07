@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  height: 10vh;
+  background-color: $primary-color;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px;
+  &__logo {
+    height: 45px;
+  }
+  &__burger {
+    font-size: 30px;
+    padding: 5px 10px;
+    color: white;
+    @media all and (min-width: 930px) {
+      display: none;
+    }
+  }
+  &__burger:hover {
+    color: $secondary-color;
+  }
+  &__nav {
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: $primary-color;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    @media all and (min-width: 930px) {
+      visibility: visible;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0);
+      position: relative;
+    }
+
+    &--close {
+      font-size: 30px;
+      text-align: end;
+      padding: 10px 20px;
+      color: white;
+      @media all and (min-width: 930px) {
+        display: none;
+      }
+    }
+    &--close:hover {
+      color: $secondary-color;
+      cursor: pointer;
+    }
+    &--list {
+      display: flex;
+      flex-direction: column;
+      @media all and (min-width: 930px) {
+        gap: 10px;
+        flex-direction: row;
+      }
+
+      &-item {
+        height: 40px;
+        padding: 5px 20px;
+        display: flex;
+        align-items: center;
+        @media all and (min-width: 930px) {
+          justify-content: center;
+          border-radius: 5px;
+          padding: 0px 20px;
+        }
+      }
+      &-item:hover {
+        background-color: $secondary-color;
+        cursor: pointer;
+      }
+      &-item a {
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.visible {
+  visibility: visible;
+}

@@ -1,14 +1,14 @@
 import '../styles/App.scss';
 import Header from './Header';
 import Landing from './Landing';
-//import Footer from './Footer';
+import Footer from './Footer';
 
 function App() {
   return (
     <div>
       <Header></Header>
       <Landing></Landing>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   );
 }

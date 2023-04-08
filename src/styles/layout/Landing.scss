@@ -1,6 +1,7 @@
 .landing {
   background-color: $secondary-color; /* Used if the image is unavailable */
   height: 85vh; /* You must set a specified height */
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;

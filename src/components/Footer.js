@@ -1,6 +1,6 @@
 import '../styles/App.scss';
 
-const Header = (props) => {
+const Footer = (props) => {
   return (
     <>
       <footer className="footer">
@@ -11,4 +11,4 @@ const Header = (props) => {
     </>
   );
 };
-export default Header;
+export default Footer;

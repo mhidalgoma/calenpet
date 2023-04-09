@@ -60,4 +60,8 @@
       font-size: 20px;
     }
   }
+  &__btn:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px $primary-color;
+  }
 }

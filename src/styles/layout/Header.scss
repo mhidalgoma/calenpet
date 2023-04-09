@@ -19,6 +19,7 @@
   }
   &__burger:hover {
     color: $secondary-color;
+    cursor: pointer;
   }
   &__nav {
     display: flex;

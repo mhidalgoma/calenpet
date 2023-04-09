@@ -1,8 +1,6 @@
 import '../styles/App.scss';
-//import { useState } from 'react';
-//import dog from '../images/dog-header.jpg';
 
-const Header = (props) => {
+const Landing = (props) => {
   return (
     <>
       <main className="landing">
@@ -18,4 +16,4 @@ const Header = (props) => {
     </>
   );
 };
-export default Header;
+export default Landing;
